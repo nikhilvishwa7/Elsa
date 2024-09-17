@@ -63,7 +63,7 @@ ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ
 CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '0').split()]
 auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '1371807165').split()]
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
-auth_channel = environ.get('AUTH_CHANNEL','-1001708413660')
+auth_channel = environ.get('AUTH_CHANNEL')
 auth_grp = environ.get('AUTH_GROUP')
 AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_channel) else None
 AUTH_GROUPS = [int(ch) for ch in auth_grp.split()] if auth_grp else None
@@ -75,8 +75,8 @@ TMP_DOWNLOAD_DIRECTORY = environ.get("TMP_DOWNLOAD_DIRECTORY", "./DOWNLOADS/")
 COMMAND_HAND_LER = environ.get("COMMAND_HAND_LER", "/")
 
 # MongoDB information
-DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://RoyalDwip:RoyalDwip@cluster0.0sp6pvf.mongodb.net/?retryWrites=true&w=majority")
-DATABASE_NAME = environ.get('DATABASE_NAME', "Elsassa")
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://nikhilvishwa77:nikhil421@cluster0.re1dizx.mongodb.net/?retryWrites=true&w=majority")
+DATABASE_NAME = environ.get('DATABASE_NAME', "Elsa")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 MONGO_URL = os.environ.get('MONGO_URL', "")
 
@@ -84,8 +84,8 @@ MONGO_URL = os.environ.get('MONGO_URL', "")
 DOWNLOAD_LOCATION = environ.get("DOWNLOAD_LOCATION", "./DOWNLOADS/AudioBoT/")
 
 #url links
-SHORTLINK_URL = environ.get('SHORTLINK_URL', 'Moneycase.link')
-SHORTLINK_API = environ.get('SHORTLINK_API', '99b2869c4f1953c28dda485395afed40e4e3717c')
+SHORTLINK_URL = environ.get('SHORTLINK_URL', 'tfushorty.com')
+SHORTLINK_API = environ.get('SHORTLINK_API', '0c82f7b3a0c4f65a29e2c75de28118a1bba1ae5f')
 IS_SHORTLINK = bool(environ.get('IS_SHORTLINK', True))
 
 #Auto approve 
@@ -99,13 +99,13 @@ SUPPORT_CHAT_ID = int(support_chat_id) if support_chat_id and id_pattern.search(
 DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in environ.get('DELETE_CHANNELS', '0').split()]
 PORT = os.environ.get("PORT", "8080")
 MAX_BTN = int(environ.get('MAX_BTN', "7"))
-S_GROUP = environ.get('S_GROUP',"https://t.me/+fUv8WckDL7kwZWY1")
-MAIN_CHANNEL = environ.get('MAIN_CHANNEL',"https://t.me/+fUv8WckDL7kwZWY1")
+S_GROUP = environ.get('S_GROUP',"https://t.me/+g1YV0iHUSQFlYjM9")
+MAIN_CHANNEL = environ.get('MAIN_CHANNEL',"https://t.me/+g1YV0iHUSQFlYjM9")
 FILE_FORWARD = environ.get('FILE_FORWARD',"https://t.me/+fUv8WckDL7kwZWY1")
 MSG_ALRT = environ.get('MSG_ALRT', '𝑪𝑯𝑬𝑪𝑲 & 𝑻𝑹𝒀 𝑨𝑳𝑳 𝑴𝒀 𝑭𝑬𝑨𝑻𝑼𝑹𝑬𝑺')
 FILE_CHANNEL = int(environ.get('FILE_CHANNEL', 0))
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1001893738639'))
-SUPPORT_CHAT = environ.get('SUPPORT_CHAT', '+fUv8WckDL7kwZWY1')
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1001537820228'))
+SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'Jai Shree Ram')
 AUTO_DELETE = is_enabled((environ.get('AUTO_DELETE', "True")), True)
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "False")), False)
 IMDB = is_enabled((environ.get('IMDB', "True")), True)
